@@ -1,0 +1,18 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    background-color: gray;
+    color: #000000;
+    text-align: justify;
+    
+
+    h1 {
+        font-style: oblique;
+        text-align: center;
+    }
+    li {
+        color: #fff;
+    }
+}
