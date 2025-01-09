@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejemplo básico de JavaScript</title>
+    </head>
+    <body>
+        <h1>Código fuente de un ejemplo básico con JavaScript</h1>
+        <script>
+            //Definamos variables
+            let nombre, apellidos, edad, hermanos;
+            nombre= "Rafa";
+            apellidos= "Martinez Díaz";
+            edad= 38;
+            hermanos= 3;
+            //Imprimo el nombre y los apellidos
+            document.write("Hola " + nombre +" " + apellidos)
+
+            //Imprimo un salto de línea
+            document.write("<br>");
+
+            //Imprimo la edad y el número de hermanos
+            document.write(nombre + "tienes" + edad + "años y además tienes " + hermanos + "hermanos.<br>");
+
+            //Fijate en la diferencia entre las dos siguientes líneas
+            document.write("Dentro de 15 años tu edad será" + edad + 15 + ".<br>");
+            document.write("Dentro de 15 años tu edad será" + (edad+15)+ ".<br>");
+
+            //Tu nombre escrito 50 veces
+            for  (i=1; i<=50; i++)
+            {
+                document.write(nombre + ",")
+        }
+        </script>
+
+    </body>
+</html>
+
