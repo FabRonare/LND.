@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Operadores</title>
+    </head>
+    <body>
+        <h1>Hola Progrmadores. Vamos a apredner aritmetica con JavaScript</h1>
+        <!---->
+
+        <script>
+            let x = 10;
+            let y = 3;
+            entrada = prompt ("Escribe el valor de x: ")
+            x = Number (entrada);
+
+            entrada = prompt ("Escribe el valor de y: ");
+            y = Number (entrada);
+
+            console.log ("Valor de x:", x);
+            console.log ("Valor de y:", y);
+            let suma = x+y;
+            document.write("La suma de x e y es: " + x+y + "<br>");
+            document.write("La suma de x e y es: " , suma);
+            console.log("Consola suma de x e y es:" ,+ x+y);
+            
+
+            let z = x-y;
+            console.log ("La resta es :" , z);
+
+            z= x*y;
+            console.log("La multiplicaion es :", z),
+
+            z = x/y;
+            console.log("La division es:", z);
+
+            z = x%y;
+            console.log("El resto de la división: ", z)
+
+            z = x**y;
+            console.log("El exponente de hacer x elevado a y es: " , z);
+
+            /*
+            x++; //x=x+1
+            console.log("el valor de x++ incrementado: ", x)
+
+            y++; //y=y+1
+            console.log("el valor de y++ incrementado: ", y)
+
+            x--; //x=x-1
+            console.log("el valor de x-- reducido: ", x)
+
+            y--; //y=y-1
+            console.log("el valor de y-- reducido: ", y)
+
+            y--; 
+            y--;//y=y-1
+            console.log("el valor de y-- reducido: ", y)*/
+            /*
+            let t = x++; //asigna el valor de x a t y a x le suma 
+            console.log("El valor de t es: ", t, "El valor de x es:", x)*/
+
+            let u = ++x; //incremneta x, y el valor incremandto se lo da a u
+            console.log("El volor de u (u=++x) es: ", u, "El valor de x es:" , x);
+
+        </script>
