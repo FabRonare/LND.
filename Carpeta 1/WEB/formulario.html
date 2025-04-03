@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - PokéCard Shop</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .form-container {
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+        
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        input, select, textarea {
+            padding: 0.5rem;
+            border: 1px solid var(--gray);
+            border-radius: 4px;
+        }
+        
+        .form-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .submit-btn {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .reset-btn {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        table {
+            width: 100%;
+            margin-top: 2rem;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            border: 1px solid var(--gray);
+            padding: 0.5rem;
+            text-align: left;
+        }
+        
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <h1>Contacta con PokéCard Shop</h1>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="formulario.html">Contacto</a></li>
+            <li><a href="tabla-cartas.html">Catálogo</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section class="section form-container">
+            <h2>Formulario de Contacto</h2>
+            
+            <form id="contact-form" action="https://webhook.site/7d580ff9-65b4-42eb-b1e2-c67d9a7a1667" method="POST">
+                <input type="hidden" name="nombre_completo" value="Tu Nombre y Apellidos">
+                
+                <div class="form-group">
+                    <label for="username">Nombre de usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Dirección de correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Intereses (selección múltiple):</label>
+                    <div>
+                        <input type="checkbox" id="interest1" name="interests" value="coleccionismo">
+                        <label for="interest1">Coleccionismo</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="interest2" name="interests" value="juego_competitivo">
+                        <label for="interest2">Juego competitivo</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="interest3" name="interests" value="eventos">
+                        <label for="interest3">Eventos</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="region">Región preferida (lista desplegable):</label>
+                    <select id="region" name="region" required>
+                        <option value="">Selecciona una región</option>
+                        <option value="kanto">Kanto</option>
+                        <option value="johto">Johto</option>
+                        <option value="hoenn">Hoenn</option>
+                        <option value="sinnoh">Sinnoh</option>
+                    </select>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Enviar datos</button>
+                    <button type="reset" class="reset-btn">Eliminar datos</button>
+                </div>
+            </form>
+            
+            <h3>Tabla de Precios de Servicios</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Servicio</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Valuación de cartas</td>
+                        <td>Evaluación profesional del valor de tus cartas</td>
+                        <td>€10 por carta</td>
+                    </tr>
+                    <tr>
+                        <td>Asesoría para colección</td>
+                        <td>Sesión de 1 hora con nuestros expertos</td>
+                        <td>€25</td>
+                    </tr>
+                    <tr>
+                        <td>Taller de juego</td>
+                        <td>Aprende estrategias competitivas</td>
+                        <td>€15 por sesión</td>
+                    </tr>
+                    <tr>
+                        <td>Membresía Premium</td>
+                        <td>Descuentos y beneficios exclusivos</td>
+                        <td>€50/año</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; <span id="current-year"></span> PokéCard Shop</p>
+        <p id="datetime"></p>
+    </footer>
+
+    <script src="poke.js"></script>
+</body>
+</html>

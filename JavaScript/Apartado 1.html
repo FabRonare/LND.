@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+
+
+function calcularAreaTriangulo(base, altura) {
+    return (base * altura) / 2;
+}
+
+let base = parseFloat(prompt("Ingrese la base del triángulo:"));
+let altura = parseFloat(prompt("Ingrese la altura del triángulo:"));
+
+
+let area = calcularAreaTriangulo(base, altura);
+let raizCuadrada = Math.sqrt(area);
+
+console.log(`El área del triángulo es: ${area}`);
+console.log(`La raíz cuadrada del área es: ${raizCuadrada}`);

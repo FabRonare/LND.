@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Completo - PokéCard Shop</title>
+    <link rel="stylesheet" href="poke.css">
+    <style>
+        .catalog-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+        }
+        
+        table {
+            width: 100%;
+            margin: 2rem 0;
+            border-collapse: collapse;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #e60012;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .rarity-common {
+            color: #333;
+        }
+        
+        .rarity-uncommon {
+            color: #2b7bba;
+        }
+        
+        .rarity-rare {
+            color: #d4af37;
+            font-weight: bold;
+        }
+        
+        .rarity-holo {
+            color: #d4af37;
+            font-weight: bold;
+            text-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        
+        .back-link:hover {
+            background-color: #e60012;
+        }
+        
+        .search-container {
+            margin-bottom: 1rem;
+        }
+        
+        .search-container input {
+            padding: 0.5rem;
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <h1>Catálogo Completo de Cartas Pokémon</h1>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="formulario.html">Contacto</a></li>
+            <li><a href="tabla-cartas.html">Catálogo</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section class="section catalog-container">
+            <h2>Nuestro Inventario Actual</h2>
+            <p>Explora nuestra colección de cartas Pokémon disponibles. Utiliza el buscador para filtrar por nombre, expansión o rareza.</p>
+            
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar cartas..." onkeyup="filterTable()">
+            </div>
+            
+            <table id="cardsTable">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Pokémon</th>
+                        <th rowspan="2">Expansión</th>
+                        <th colspan="2">Precio (€)</th>
+                        <th rowspan="2">Rareza</th>
+                        <th rowspan="2">Estado</th>
+                    </tr>
+                    <tr>
+                        <th>Normal</th>
+                        <th>Foil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Charizard</td>
+                        <td>Base Set (1999)</td>
+                        <td>-</td>
+                        <td>250.00</td>
+                        <td class="rarity-holo">Holográfica</td>
+                        <td>Disponible</td>
+                    </tr>
+                    <tr>
+                        <td>Blastoise</td>
+                        <td>Base Set (1999)</td>
+                        <td>15.00</td>
+                        <td>120.00</td>
+                        <td class="rarity-holo">Holográfica</td>
+                        <td>Última unidad</td>
+                    </tr>
+                    <tr>
+                        <td>Venusaur</td>
+                        <td>Base Set (1999)</td>
+                        <td>12.00</td>
+                        <td>90.00</td>
+                        <td class="rarity-holo">Holográfica</td>
+                        <td>Disponible</td>
+                    </tr>
+                    <tr>
+                        <td>Pikachu</td>
+                        <td>Base Set (1999)</td>
+                        <td>5.00</td>
+                        <td>20.00</td>
+                        <td class="rarity-common">Común</td>
+                        <td>Disponible</td>
+                    </tr>
+                    <tr>
+                        <td>Mewtwo</td>
+                        <td>Fossil (1999)</td>
+                        <td>8.00</td>
+                        <td>35.00</td>
+                        <td class="rarity-holo">Holográfica</td>
+                        <td>Disponible</td>
+                    </tr>
+                    <tr>
+                        <td>Gyarados</td>
+                        <td>Base Set (1999)</td>
+                        <td>7.00</td>
+                        <td>30.00</td>
+                        <td class="rarity-holo">Holográfica</td>
+                        <td>Disponible</td>
+                    </tr>
+                    <tr>
+                        <td>Dragonite</td>
+                        <td>Fossil (1999)</td>
+                        <td>6.50</td>
+                        <td>28.00</td>
+                        <td class="rarity-rare">Rara</td>
+                        <td>Disponible</td>
+                    </tr>
+                    <tr>
+                        <td>Alakazam</td>
+                        <td>Base Set (1999)</td>
+                        <td>6.00</td>
+                        <td>25.00</td>
+                        <td class="rarity-holo">Holográfica</td>
+                        <td>Agotado</td>
+                    </tr>
+                    <tr>
+                        <td>Zapdos</td>
+                        <td>Base Set (1999)</td>
+                        <td>5.50</td>
+                        <td>22.00</td>
+                        <td class="rarity-holo">Holográfica</td>
+                        <td>Disponible</td>
+                    </tr>
+                    <tr>
+                        <td>Machamp</td>
+                        <td>Base Set (1999)</td>
+                        <td>4.00</td>
+                        <td>18.00</td>
+                        <td class="rarity-holo">Holográfica</td>
+                        <td>Disponible</td>
+                    </tr>
+                    <tr>
+                        <td>Dark Charizard</td>
+                        <td>Team Rocket (2000)</td>
+                        <td>25.00</td>
+                        <td>110.00</td>
+                        <td class="rarity-holo">Holográfica</td>
+                        <td>Última unidad</td>
+                    </tr>
+                    <tr>
+                        <td>Lugia</td>
+                        <td>Neo Genesis (2000)</td>
+                        <td>30.00</td>
+                        <td>150.00</td>
+                        <td class="rarity-holo">Holográfica</td>
+                        <td>Disponible</td>
+                    </tr>
+                    <tr>
+                        <td>Ho-Oh</td>
+                        <td>Neo Revelation (2001)</td>
+                        <td>28.00</td>
+                        <td>130.00</td>
+                        <td class="rarity-holo">Holográfica</td>
+                        <td>Disponible</td>
+                    </tr>
+                    <tr>
+                        <td>Celebi</td>
+                        <td>Neo Revelation (2001)</td>
+                        <td>15.00</td>
+                        <td>75.00</td>
+                        <td class="rarity-holo">Holográfica</td>
+                        <td>Agotado</td>
+                    </tr>
+                    <tr>
+                        <td>Rayquaza</td>
+                        <td>EX Deoxys (2005)</td>
+                        <td>35.00</td>
+                        <td>160.00</td>
+                        <td class="rarity-holo">Holográfica</td>
+                        <td>Disponible</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">Mostrando 15 de 248 cartas disponibles - Actualizado: <span id="update-date"></span></td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <h3>Leyenda de Rarezas</h3>
+            <ul>
+                <li><span class="rarity-common">Común</span>: Cartas básicas disponibles en gran cantidad</li>
+                <li><span class="rarity-uncommon">Poco común</span>: Cartas con menor frecuencia de aparición</li>
+                <li><span class="rarity-rare">Rara</span>: Cartas difíciles de encontrar</li>
+                <li><span class="rarity-holo">Holográfica</span>: Cartas con efecto holográfico, las más valiosas</li>
+            </ul>
+            
+            <a href="index.html" class="back-link">Volver a la página principal</a>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; <span id="current-year"></span> PokéCard Shop</p>
+        <p id="datetime"></p>
+    </footer>
+
+    <script src="poke.js"></script>
+    <script>
+        // Mostrar fecha de actualización
+        const updateDate = new Date();
+        document.getElementById('update-date').textContent = updateDate.toLocaleDateString('es-ES');
+        
+        // Función para filtrar la tabla
+        function filterTable() {
+            const input = document.getElementById("searchInput");
+            const filter = input.value.toUpperCase();
+            const table = document.getElementById("cardsTable");
+            const tr = table.getElementsByTagName("tr");
+            
+            for (let i = 2; i < tr.length-1; i++) { // Empieza en 2 para saltar los headers
+                let found = false;
+                const tds = tr[i].getElementsByTagName("td");
+                
+                for (let j = 0; j < tds.length; j++) {
+                    const td = tds[j];
+                    if (td) {
+                        if (td.textContent.toUpperCase().indexOf(filter) > -1) {
+                            found = true;
+                            break;
+                        }
+                    }
+                }
+                
+                tr[i].style.display = found ? "" : "none";
+            }
+        }
+    </script>
+</body>
+</html>
