@@ -1,4 +1,4 @@
-// Mostrar fecha y hora actual
+
 function updateDateTime() {
     const now = new Date();
     const options = { 
@@ -13,9 +13,7 @@ function updateDateTime() {
     document.getElementById('datetime').textContent = now.toLocaleDateString('es-ES', options);
 }
 
-// Mostrar año actual
 document.getElementById('current-year').textContent = new Date().getFullYear();
 
-// Actualizar cada segundo
 setInterval(updateDateTime, 1000);
-updateDateTime(); // Llamada inicial
+updateDateTime(); 

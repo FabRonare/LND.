@@ -1,4 +1,4 @@
-/* Variables */
+
 :root {
     --primary-color: #e60012;
     --secondary-color: #333;
@@ -8,7 +8,6 @@
     --gray: #ddd;
 }
 
-/* Reset y estilos base */
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +21,6 @@ body {
     color: var(--dark-color);
 }
 
-/* Estructura semántica */
 .main-header {
     background-color: var(--primary-color);
     color: var(--white);
@@ -74,7 +72,7 @@ body {
     margin-top: 2rem;
 }
 
-/* Componentes */
+
 .image-container {
     display: flex;
     justify-content: space-around;
@@ -96,7 +94,6 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* Responsive Design */
 @media (min-width: 768px) {
     .image-box {
         width: 45%;

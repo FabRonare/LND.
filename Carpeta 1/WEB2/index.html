@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="poke.css">
+    <link rel="stylesheet" href="styles/main.css">
     <style>
         body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
         .w3-third img:hover{opacity: 1}
-    
+        
+        /* Estilos personalizados */
         .pokemon-red {
             background-color: #e60012;
             color: white;
@@ -48,12 +49,13 @@
 </head>
 <body class="w3-light-grey">
 
-
+<!-- Header -->
 <header class="w3-container pokemon-red w3-center" style="padding:128px 16px">
     <h1 class="w3-margin w3-jumbo">POKÉCARD SHOP</h1>
     <p class="w3-xlarge">Tu tienda especializada en cartas Pokémon</p>
 </header>
 
+<!-- Navigation Bar -->
 <div class="nav-bar">
     <a href="#inicio">Inicio</a>
     <a href="#productos">Productos</a>
@@ -63,7 +65,7 @@
     <a href="formulario.html">Contacto</a>
 </div>
 
-
+<!-- Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container" id="inicio">
     <div class="w3-content">
         <div class="w3-twothird">
@@ -73,16 +75,16 @@
         </div>
 
         <div class="w3-third w3-center">
-            <img src="pokeball.png" alt="Pokéball" class="w3-padding-64" style="width: 80%">
+            <img src="images/pokeball.png" alt="Pokéball" class="w3-padding-64" style="width: 80%">
         </div>
     </div>
 </div>
 
-
+<!-- Second Grid -->
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="productos">
     <div class="w3-content">
         <div class="w3-third w3-center">
-            <img src="SSPimg.png" alt="Caja de sobres Pokémon" class="w3-padding-64" style="width: 80%">
+            <img src="images/booster-box.png" alt="Caja de sobres Pokémon" class="w3-padding-64" style="width: 80%">
         </div>
 
         <div class="w3-twothird">
@@ -99,25 +101,26 @@
     </div>
 </div>
 
+<!-- Photo Grid -->
 <div class="w3-row-padding w3-padding-16 w3-center" id="cartas">
     <h2>Cartas Destacadas</h2>
     <div class="w3-third">
         <div class="card-container">
-            <img src="Charizar_base_set.jpg" alt="Charizard" style="width:100%">
+            <img src="images/carta-charizard.jpg" alt="Charizard" style="width:100%">
             <div class="card-price">€250.00</div>
             <p>Charizard Base Set - La joya de cualquier colección</p>
         </div>
     </div>
     <div class="w3-third">
         <div class="card-container">
-            <img src="blastoisebase.jpg" alt="Blastoise" style="width:100%">
+            <img src="images/carta-blastoise.jpg" alt="Blastoise" style="width:100%">
             <div class="card-price">€120.00</div>
             <p>Blastoise Base Set - Edición original 1999</p>
         </div>
     </div>
     <div class="w3-third">
         <div class="card-container">
-            <img src="venasurbase.png" alt="Venusaur" style="width:100%">
+            <img src="images/carta-venusaur.jpg" alt="Venusaur" style="width:100%">
             <div class="card-price">€90.00</div>
             <p>Venusaur Base Set - Completa el trío inicial</p>
         </div>
@@ -127,28 +130,28 @@
 <div class="w3-row-padding w3-padding-16 w3-center">
     <div class="w3-third">
         <div class="card-container">
-            <img src="pikachubase.jpg" alt="Pikachu" style="width:100%">
+            <img src="images/carta-pikachu.jpg" alt="Pikachu" style="width:100%">
             <div class="card-price">€20.00</div>
             <p>Pikachu Base Set - El Pokémon más icónico</p>
         </div>
     </div>
     <div class="w3-third">
         <div class="card-container">
-            <img src="mewtwofossil.png" alt="Mewtwo" style="width:100%">
+            <img src="images/carta-mewtwo.jpg" alt="Mewtwo" style="width:100%">
             <div class="card-price">€35.00</div>
             <p>Mewtwo Fossil - Poderoso Pokémon legendario</p>
         </div>
     </div>
     <div class="w3-third">
         <div class="card-container">
-            <img src="Lugia_(Neo_Génesis_TCG).png" alt="Lugia" style="width:100%">
+            <img src="images/carta-lugia.jpg" alt="Lugia" style="width:100%">
             <div class="card-price">€150.00</div>
             <p>Lugia Neo Genesis - Una de las cartas más buscadas</p>
         </div>
     </div>
 </div>
 
-
+<!-- About Section -->
 <div class="w3-container w3-padding-64" id="sobre-nosotros">
     <div class="w3-content">
         <h1>Sobre Nosotros</h1>
@@ -175,7 +178,7 @@
     </div>
 </div>
 
-
+<!-- Resources Section -->
 <div class="w3-container w3-padding-64 w3-center">
     <h2>Recursos para Coleccionistas</h2>
     <div class="w3-row">
@@ -191,7 +194,7 @@
     </div>
 </div>
 
-
+<!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
     <div class="w3-xlarge w3-padding-32">
         <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
@@ -202,8 +205,9 @@
     <p id="datetime"></p>
 </footer>
 
-<script src="poke.js"></script>
+<script src="scripts/main.js"></script>
 <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
     function myFunction() {
         var x = document.getElementById("navDemo");
         if (x.className.indexOf("w3-show") == -1) {
