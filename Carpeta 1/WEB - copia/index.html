@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>PokéCard Shop - Tienda de Cartas Pokémon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="poke.css">
+    <style>
+        body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+        .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+        .w3-third img:hover{opacity: 1}
+    
+        .pokemon-red {
+            background-color: #e60012;
+            color: white;
+        }
+        .nav-bar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .nav-bar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .nav-bar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .card-price {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .card-container {
+            position: relative;
+        }
+    </style>
+</head>
+<body class="w3-light-grey">
+
+
+<header class="w3-container pokemon-red w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">POKÉCARD SHOP</h1>
+    <p class="w3-xlarge">Tu tienda especializada en cartas Pokémon</p>
+</header>
+
+<div class="nav-bar">
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#cartas">Cartas Destacadas</a>
+    <a href="#sobre-nosotros">Sobre Nosotros</a>
+    <a href="tabla-cartas.html">Catálogo</a>
+    <a href="formulario.html">Contacto</a>
+</div>
+
+
+<div class="w3-row-padding w3-padding-64 w3-container" id="inicio">
+    <div class="w3-content">
+        <div class="w3-twothird">
+            <h1>Bienvenido a PokéCard Shop</h1>
+            <h5 class="w3-padding-32">En PokéCard Shop nos apasionan las cartas Pokémon tanto como a ti. Ofrecemos una amplia selección de cartas, desde las clásicas primeras ediciones hasta las más recientes expansiones.</h5>
+            <p class="w3-text-grey">Nuestro objetivo es proporcionar a los coleccionistas y jugadores los mejores productos al mejor precio. Explora nuestro catálogo y descubre rarezas, cartas holográficas, decks competitivos y mucho más. Todos nuestros productos son 100% originales y certificados.</p>
+        </div>
+
+        <div class="w3-third w3-center">
+            <img src="pokeball.png" alt="Pokéball" class="w3-padding-64" style="width: 80%">
+        </div>
+    </div>
+</div>
+
+
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="productos">
+    <div class="w3-content">
+        <div class="w3-third w3-center">
+            <img src="SSPimg.png" alt="Caja de sobres Pokémon" class="w3-padding-64" style="width: 80%">
+        </div>
+
+        <div class="w3-twothird">
+            <h1>Nuestros Productos Destacados</h1>
+            <h5 class="w3-padding-32">Ofrecemos una variedad de productos para todos los niveles de coleccionistas y jugadores.</h5>
+            <p class="w3-text-grey">
+                <strong>Cartas sueltas:</strong> Comunes, poco comunes, raras y holográficas<br>
+                <strong>Sobres de expansión:</strong> Sellados y garantizados<br>
+                <strong>Cajas de booster:</strong> Para los coleccionistas más serios<br>
+                <strong>Decks preconstruidos:</strong> Listos para jugar<br>
+                <strong>Accesorios:</strong> Protectores, álbumes y más
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-16 w3-center" id="cartas">
+    <h2>Cartas Destacadas</h2>
+    <div class="w3-third">
+        <div class="card-container">
+            <img src="Charizar_base_set.jpg" alt="Charizard" style="width:100%">
+            <div class="card-price">€250.00</div>
+            <p>Charizard Base Set - La joya de cualquier colección</p>
+        </div>
+    </div>
+    <div class="w3-third">
+        <div class="card-container">
+            <img src="blastoisebase.jpg" alt="Blastoise" style="width:100%">
+            <div class="card-price">€120.00</div>
+            <p>Blastoise Base Set - Edición original 1999</p>
+        </div>
+    </div>
+    <div class="w3-third">
+        <div class="card-container">
+            <img src="venasurbase.png" alt="Venusaur" style="width:100%">
+            <div class="card-price">€90.00</div>
+            <p>Venusaur Base Set - Completa el trío inicial</p>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-third">
+        <div class="card-container">
+            <img src="pikachubase.jpg" alt="Pikachu" style="width:100%">
+            <div class="card-price">€20.00</div>
+            <p>Pikachu Base Set - El Pokémon más icónico</p>
+        </div>
+    </div>
+    <div class="w3-third">
+        <div class="card-container">
+            <img src="mewtwofossil.png" alt="Mewtwo" style="width:100%">
+            <div class="card-price">€35.00</div>
+            <p>Mewtwo Fossil - Poderoso Pokémon legendario</p>
+        </div>
+    </div>
+    <div class="w3-third">
+        <div class="card-container">
+            <img src="Lugia_(Neo_Génesis_TCG).png" alt="Lugia" style="width:100%">
+            <div class="card-price">€150.00</div>
+            <p>Lugia Neo Genesis - Una de las cartas más buscadas</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="w3-container w3-padding-64" id="sobre-nosotros">
+    <div class="w3-content">
+        <h1>Sobre Nosotros</h1>
+        <p>PokéCard Shop nació en 2010 de la pasión de un grupo de amigos por el coleccionismo de cartas Pokémon. Lo que comenzó como un pequeño negocio local ha crecido hasta convertirse en una de las tiendas de referencia para coleccionistas en toda la región.</p>
+        <p>Nuestro equipo está formado por expertos en el TCG (Trading Card Game) de Pokémon que pueden asesorarte tanto si estás comenzando tu colección como si buscas esa carta específica para completar tu deck competitivo.</p>
+        
+        <h3>Nuestros Valores</h3>
+        <div class="w3-row">
+            <div class="w3-half w3-container">
+                <ul>
+                    <li>Autenticidad garantizada</li>
+                    <li>Precios competitivos</li>
+                    <li>Asesoramiento experto</li>
+                </ul>
+            </div>
+            <div class="w3-half w3-container">
+                <ul>
+                    <li>Envíos seguros</li>
+                    <li>Servicio personalizado</li>
+                    <li>Pasión por Pokémon</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="w3-container w3-padding-64 w3-center">
+    <h2>Recursos para Coleccionistas</h2>
+    <div class="w3-row">
+        <div class="w3-third">
+            <a href="https://www.pokemon.com/es/jcc-pokemon/" target="_blank" class="w3-button w3-block w3-padding-large w3-light-grey">Sitio oficial del JCC Pokémon</a>
+        </div>
+        <div class="w3-third">
+            <a href="https://www.pokemoncenter.com/" target="_blank" class="w3-button w3-block w3-padding-large w3-light-grey">Pokémon Center (tienda oficial)</a>
+        </div>
+        <div class="w3-third">
+            <a href="https://bulbapedia.bulbagarden.net/" target="_blank" class="w3-button w3-block w3-padding-large w3-light-grey">Bulbapedia (enciclopedia Pokémon)</a>
+        </div>
+    </div>
+</div>
+
+
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+    <div class="w3-xlarge w3-padding-32">
+        <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+        <a href="#" class="w3-hover-text-red"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+    </div>
+    <p>&copy; <span id="current-year"></span> PokéCard Shop - Todos los derechos reservados</p>
+    <p id="datetime"></p>
+</footer>
+
+<script src="poke.js"></script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
+
+</body>
+</html>
